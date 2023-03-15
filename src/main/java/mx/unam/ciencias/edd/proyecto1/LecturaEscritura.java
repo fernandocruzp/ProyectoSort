@@ -7,8 +7,7 @@ import java.io.IOException;
 //Cruz Pineda Fernando
 public class LecturaEscritura{
 
-    public static Lista<String> lee(Lista<String> nombres) throws IOException{
-	Lista<String> lineas=new Lista<String>();
+    public static Lista<String> lee(Lista<String> lineas,Lista<String> nombres) throws IOException{
 	for(String s : nombres){
 	    BufferedReader lectura = new BufferedReader(new FileReader(s));
 	    String linea="";
