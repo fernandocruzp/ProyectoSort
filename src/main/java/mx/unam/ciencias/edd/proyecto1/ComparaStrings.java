@@ -2,14 +2,14 @@ package mx.unam.ciencias.edd.proyecto1;
 import java.util.Comparator;
 
 public class ComparaStrings implements Comparator<String>{
-    private final String acento="áéíóú";
-    private final String normal="aeiou";
+    private final String acento="áéíóúñü";
+    private final String normal="aeiounu";
     @Override public int compare(String a, String b){
 	return quitaCaracteres(a).compareTo(quitaCaracteres(b));
     }
 
     private String quitaCaracteres(String a){
-	a=a.trim();
+	a=a.replace(" ","");
 	a=a.toLowerCase();
 	a=a.replace("¿","");
 	a=a.replace("¡","");
