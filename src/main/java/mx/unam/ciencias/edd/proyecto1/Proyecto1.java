@@ -26,6 +26,7 @@ public class Proyecto1{
 	}catch(IOException e){
 	    System.out.println(e);
 	}
+	
 	if(args.length < 1 && orden.getElementos() == 0){
 	    System.out.println("Introduzca un archivo a ordenar");
 	    System.exit(1);
